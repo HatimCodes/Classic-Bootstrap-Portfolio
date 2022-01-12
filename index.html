@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link href="css/bootstrap.css " rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <title>Hatim Dyaz | Freelancer & Programmer
+    </title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="" class="typing navbar-brand">
+                <h5>Hatim Dyaz</h6>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a href="#whatcanido" class="nav-link">What can i do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#porjects" class="nav-link">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contactme" class="nav-link">Contact Infos</a>
+                    </li>
+                    <!--           
+                    <li class="nav-item"></li>
+                    <a href="#porjects" class="nav-link">F.A.Q</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <section class="bg-dark text-light p-5 text-center text-sm-start" id="about">
+                        <div class="container">
+                            <div class="d-sm-flex align-items-center justify-content-between">
+                                <div>
+                                    <h1>Hatim Dyaz : <span class="text-warning">Freelancer & Programmer</span></h1>
+                                    <p class="lead my-4">
+                                        My name is Hatim Dyaz and i'm 21 years old, i'm a programmer i've been working
+                                        with a computer
+                                        since i was 12, i learned a lot of things in this virtual world like apps and
+                                        websites creation.
+                                    </p>
+                                    <a href="#contactme" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact me</a>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-dark" id="exampleModalLabel">New message
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="https://formspree.io/f/xbjwdrkg" method="post">
+                                                        <div class="mb-3">
+                                                            <label for="recipient-name"
+                                                                class="col-form-label text-dark">Your email:</label>
+                                                            <input type="email" class="form-control" id="recipient-name"
+                                                                name="_replyto" placeholder="Enter your email">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text"
+                                                                class="col-form-label text-dark">Message:</label>
+                                                            <textarea required class="form-control" id="message-text"
+                                                                name="message"></textarea>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="submit" class="btn btn-primary">Send
+                                                                message</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="rounded-circle w-25 d-none d-sm-block " src="img/Me.jpg" alt="">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="carousel-item">
+                    <section class="bg-dark text-light p-5 text-center text-sm-start" id="about">
+                        <div class="container">
+                            <div class="d-sm-flex align-items-center justify-content-between">
+                                <div>
+                                    <h1>I can create <span class="text-warning">Web, Mobile and Desktop Apps</span></h1>
+                                    <p class="lead my-4">
+                                        Through my journey i worked on some projects and learned how to create websites,
+                                        desktop apps and mobile apps... you can check some of my projects from
+                                    </p>
+                                    <a href="#porjects" class="btn btn-primary btn-lg">Here</a>
+                                </div>
+                                <img class="rounded-circle w-25 d-none d-sm-block " src="img/coding.jpg" alt="">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+    <!-- added to the slideshow
+    <section class="bg-dark text-light p-5 text-center text-sm-start" id="about">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Hatim Dyaz : <span class="text-warning">Freelancer & Programmer</span></h1>
+                    <p class="lead my-4">
+                        My name is Hatim Dyaz and i'm 21 years old, i'm a programmer i've been working with a computer
+                        since i was 12, i learned a lot of things in this virtual world like apps and websites creation
+                        .
+                    </p>
+                    <a href="#contactme" class="btn btn-primary btn-lg">Contact me</a>
+                </div>
+                <img class="rounded-circle w-25 d-none d-sm-block " src="img/Me.jpg" alt="">
+            </div>
+        </div>
+    </section>
+-->
+    <section id="whatcanido" class="bg-primary text-center text-light p-5">
+        <div class="container ">
+            <h2>What can i do ?</h2>
+        </div>
+    </section>
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Desktop Applications
+                            </h3>
+                            <p class="card-text">
+                                Create desktop application to manage your business or do any job for you that you have
+                                in mind.
+                            </p>
+                            <a href="#desktop" class="btn btn-primary">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-globe"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Web site
+                            </h3>
+                            <p class="card-text">
+                                Create a web site that is either a store,business website, blog, portfolio...
+                            </p>
+                            <a href="#site" class="btn btn-primary">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Mobile Application
+                            </h3>
+                            <p class="card-text">
+                                Create mobile application suit your needs either for your business or your personal use.
+                            </p>
+                            <a href="#mobile" class="btn btn-primary">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="desktop" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/desktop.webp" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Desktop Applications</h2>
+                    <p class="lead">
+                        What is a desktop application ?
+                    </p>
+                    <p>
+                        A desktop application is a software program that can be run on a standalone computer to perform
+                        a specific task by an end-user. Almost any application you use in your computer is a desktop
+                        application.
+
+
+                    </p>
+                    <a href="#contactme" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i>Contact me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section id="site" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Web site
+
+                    </h2>
+                    <p class="lead">
+                        What is a Web site ?
+                    </p>
+                    <p>
+                        A website is a collection of web pages and related content that is identified by a common domain
+                        name and published on at least one web server. Notable examples are wikipedia.org, google.com,
+                        amazon.com and what you are seeing right now is also a website</p>
+                    <a href="#contactme" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i>Contact me
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="img/site.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section id="mobile" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/phone.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Mobile Application</h2>
+                    <p class="lead">
+                        What is a mobile application?
+                    </p>
+                    <p>
+                        A mobile application, also referred to as a mobile app or simply an app, is a computer program
+                        or software application designed to run on a mobile device such as a phone, tablet, or watch.
+                    </p>
+                    <a href="#contactme" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i>Contact me
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--
+    <section id="faq" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">FAQ</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                            body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                            body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <section id="porjects" class="p-5 bg-primary ">
+        <div class="container">
+            <h2 class="text-center text-white">
+                My Projects
+            </h2>
+            <p class="lead text-center text-white mb-5">
+                These are some of my projects that i worked on
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="img/Hallucinate.png" class="rounded-circle mb-3" />
+                            <h3 class="card-title mb-3">Lol Clown Bot</h3>
+                            <p class="cardtext">LOL CLOWN BOT is a league of legends bot that i created using Pyhton and
+                                C#, im still working and updating it</p>
+                            <a href="https://www.youtube.com/channel/UCcHbVO443WVVYakyh0oGPeg" target="_blank"><i
+                                    class="bi bi-youtube text-dark mx1"></i></a>
+                            <a href="https://discord.gg/F33xTGYhPj" target="_blank"><i
+                                    class="bi bi-discord text-dark mx1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="img/C-Sharp.png" class="rounded-circle mb-3" />
+                            <h3 class="card-title mb-3">Customers Manager</h3>
+                            <p class="cardtext">I created this application using C# on my internship and it was also my
+                                end of studies project and it was made to manage customers.</p>
+                            <a href="https://github.com/HatimCodes/Gestion-d-inscription-PFE" target="_blank"><i
+                                    class="bi bi-github text-dark mx1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="img/v5-new-logo.png" class="rounded-circle mb-3" />
+                            <h3 class="card-title mb-3">This Website</h3>
+                            <p class="cardtext">The website you are seeing here is a simple smooth website made by
+                                bootstrap, where i can offer my services and introduce my self</p>
+                            <a href="#"><i class="bi bi-globe text-dark mx1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="img/clownbot.png" class="rounded-circle mb-3" />
+                            <h3 class="card-title mb-3">Bot's Website</h3>
+                            <p class="cardtext">And this is a website i made for my bot that i already made to help
+                                promote it and to be easily found and accessible.</p>
+                            <a href="https://lolclownbot.com/" target="_blank"><i
+                                    class="bi bi-globe text-dark mx1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5">
+        <div class="container" id="contactme">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">
+                        Contact Infos
+                    </h2>
+                    <p class="text-dark text-center">
+                        Feel free to contact me if you have any questions or for business purpose
+                    </p>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <i class="bi bi-at text-dark fw-bold"></i><span class="fw-bold">: </span>
+                            dyazhatim@gmail.com
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-phone text-dark"></i><span class="fw-bold">: </span> +212 771384286
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-geo-alt-fill text-dark"></i><span class="fw-bold">: </span> Fès
+                        </li>
+                        <li class="list-group-item text-center">
+                            <a href="https://wa.me/0631280261" target="_blank"><i class="bi bi-whatsapp text-dark"
+                                    title="Whatsapp"></i></a>
+                            <a href="https://www.facebook.com/Hatim.Sava/" target="_blank" title="Facebook"><i
+                                    class="bi bi-facebook text-dark"></i></a>
+                            <a href="https://github.com/HatimCodes/" target="_blank"><i class="bi bi-github text-dark"
+                                    title="Github"></i></a>
+                            <a href="https://discordapp.com/users/539868488617951232" target="_blank"><i
+                                    class="bi bi-discord text-dark" title="Discord"></i></a>
+                            <a href="https://www.linkedin.com/in/hatim-dyaz-42b502160/" target="_blank"
+                                title="Linkedin"><i class="bi bi-linkedin text-dark"></i></a>
+                            <a href="Files/CV.pdf"><i class="bi bi-file-earmark-person text-dark" title="CV"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-1 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">
+                Copyrigh &copy; 2021 <a href="#" class="nav-link text-warning fw-bold fst-italic">Hatim dyaz</a>
+            </p>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle"></i></button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaGF0aW14YWNvIiwiYSI6ImNreGx4aWVmczE4dmwyeG81c2h3amh1ZWMifQ.IJ2flJuztg9FoOJvT6BPCA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/hatimxaco/ckxlyaoer5x3714lek0xlin03',
+            center: [-5.013906, 34.035258],
+            zoom: 12.99
+        });
+    </script>
+</body>
+
+</html>
